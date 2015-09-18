@@ -9,6 +9,7 @@
   <% @notes.each do |note| %>
     <%= div_for note do %>
       <h2><%= note.title %></h2>
+      <p><%= note.preview %></p>
       <p><%= note.content %></p>
       <p><%= link_to 'Show', note_path(note) %> |
         <%= link_to 'Edit', edit_note_path(note) %> |
